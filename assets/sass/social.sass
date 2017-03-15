@@ -1,0 +1,62 @@
+section.social
+  width: calc(45% - 6px)
+  height: 55%
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.6)
+  opacity: 1
+  transition: all 0.5s linear
+
+  &:hover
+    transform: scale(1.3)
+    z-index: 2
+
+  background:
+    color: #585656
+
+  .displayB
+    display: block
+
+    h1
+      margin-top: 10px
+      text-align: center
+      font-size: 30px
+    p
+      text-align: center
+      margin: 10px
+
+  .social-wrap
+    display: flex
+    flex-direction: row
+    max-width: 100%
+    justify-content: space-around
+
+    .twitter-logo
+      background:
+        image: url(/assets/img/twitter-logo.gif)
+        size: contain
+      width: 55px
+      height: 55px
+      box-shadow: 0 5px 20px 0 #1DA1F2
+
+    .email-logo
+      background:
+        image: url(/assets/img/gmail-logo.png)
+        size: contain
+      width: 55px
+      height: 55px
+      box-shadow: 0 5px 20px 0 #E70F10
+
+    .facebook-logo
+      background:
+        image: url(/assets/img/facebook-logo.png)
+        size: contain
+      width: 55px
+      height: 55px
+      box-shadow: 0 5px 10px 5px #3C5A98
+
+    .github-logo
+      background:
+        image: url(/assets/img/github-logo.png)
+        size: contain
+      width: 55px
+      height: 55px
+      box-shadow: 0 5px 20px 0 #E04006

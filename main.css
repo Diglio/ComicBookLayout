@@ -1,0 +1,255 @@
+.button {
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: .5em;
+  max-width: 57%;
+  position: relative;
+  left: 20%; }
+  .button a {
+    text-decoration: none; }
+
+@keyframes wiggle {
+  20% {
+    transform: translateX(20px); }
+  40% {
+    transform: translateX(-20px); }
+  60% {
+    transform: translateX(5px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes enticing-grow {
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1.15); }
+  75% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+body p {
+  color: white; }
+
+.home-wrap {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  transition: background 0.5s linear; }
+
+.home-sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 775px;
+  max-width: 775px; }
+  .home-sections section {
+    border-radius: 20px;
+    border: 3px solid white;
+    overflow: hidden; }
+  .home-sections .flex {
+    display: flex;
+    flex-direction: row; }
+  .home-sections .flex--center {
+    justify-content: center; }
+
+.col-1 {
+  text-align: center; }
+
+.alignTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 100%;
+  height: 35%;
+  align-items: flex-start;
+  transition: opacity 0.5s linear; }
+
+.alignCenter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 25%;
+  transition: opacity 0.5s linear; }
+
+.alignBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 100%;
+  height: 40%;
+  align-items: flex-end;
+  transition: opacity 0.5s linear; }
+
+section.about {
+  position: absolute;
+  width: 100%;
+  height: 220%;
+  left: 100%;
+  box-shadow: -6px 6px 8px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+  background-color: #CB7E15; }
+  section.about .displayB {
+    display: block;
+    text-align: center; }
+    section.about .displayB h1 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 30px; }
+    section.about .displayB p {
+      font-size: 16px; }
+  section.about .mike-faq {
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+    align-items: flex-start; }
+    section.about .mike-faq h1 {
+      font-size: 24px;
+      font-weight: bold;
+      max-width: 25%;
+      text-align: center;
+      text-shadow: none; }
+    section.about .mike-faq p {
+      font-size: 14px;
+      font-weight: normal;
+      color: black; }
+
+section.setup {
+  width: calc(55% - 6px);
+  height: 80%;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.6);
+  background-color: #004EFF; }
+  section.setup h1 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center; }
+  section.setup p {
+    margin: 10px;
+    font-size: 18px; }
+  section.setup a {
+    color: #004EFF; }
+  section.setup .displayB {
+    display: block;
+    text-align: center; }
+  section.setup .setup-images {
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%; }
+
+section.social {
+  width: calc(45% - 6px);
+  height: 55%;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: all 0.5s linear;
+  background-color: #585656; }
+  section.social:hover {
+    transform: scale(1.3);
+    z-index: 2; }
+  section.social .displayB {
+    display: block; }
+    section.social .displayB h1 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 30px; }
+    section.social .displayB p {
+      text-align: center;
+      margin: 10px; }
+  section.social .social-wrap {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around; }
+    section.social .social-wrap .twitter-logo {
+      background-image: url(/assets/img/twitter-logo.gif);
+      background-size: contain;
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 5px 20px 0 #1DA1F2; }
+    section.social .social-wrap .email-logo {
+      background-image: url(/assets/img/gmail-logo.png);
+      background-size: contain;
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 5px 20px 0 #E70F10; }
+    section.social .social-wrap .facebook-logo {
+      background-image: url(/assets/img/facebook-logo.png);
+      background-size: contain;
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 5px 10px 5px #3C5A98; }
+    section.social .social-wrap .github-logo {
+      background-image: url(/assets/img/github-logo.png);
+      background-size: contain;
+      width: 55px;
+      height: 55px;
+      box-shadow: 0 5px 20px 0 #E04006; }
+
+section.twitch {
+  width: calc(55% - 6px);
+  height: 80%;
+  box-shadow: -8px -8px 8px rgba(0, 0, 0, 0.6);
+  background-color: #5A3E85; }
+  section.twitch h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center; }
+  section.twitch p {
+    font-size: 16px;
+    margin: 10px; }
+  section.twitch .displayB {
+    display: block;
+    text-align: center; }
+
+section.webdesign {
+  width: calc(45% - 6px);
+  height: 53%;
+  box-shadow: 8px -8px 8px rgba(0, 0, 0, 0.6);
+  background-color: #1F843A; }
+  section.webdesign h1 {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center; }
+  section.webdesign p {
+    font-size: 16px;
+    margin: 10px; }
+  section.webdesign a {
+    color: #1F843A; }
+  section.webdesign .displayB {
+    display: block;
+    text-align: center; }
+
+section.youtube {
+  position: absolute;
+  width: 95%;
+  height: 140%;
+  margin-right: 5px;
+  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.6);
+  transition: opacity 1.5s ease-in-out;
+  background-color: #CC181E; }
+  section.youtube h1 {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center; }
+  section.youtube p {
+    font-size: 16px;
+    margin: 10px; }
+  section.youtube a {
+    color: #CC181E; }
+  section.youtube .displayB {
+    text-align: center;
+    display: block; }
